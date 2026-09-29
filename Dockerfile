@@ -4,7 +4,7 @@ FROM tomcat:10.1-jdk21-temurin
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file
-COPY myapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/myapp.war /usr/local/tomcat/webapps/ROOT.war
 
 # Tomcat listens on 8080
 EXPOSE 8080
