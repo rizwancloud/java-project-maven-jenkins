@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: java-app
-  namespace: jenkins
+  namespace: default
   labels:
     app: java-app
 
@@ -40,7 +40,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: java-app-service
-  namespace: jenkins
+  namespace: default
 
 spec:
   type: LoadBalancer
