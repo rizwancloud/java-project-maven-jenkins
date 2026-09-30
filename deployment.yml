@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: admindockerrizwan/myapp:latest
+          image: admindockerrizwan/myapp:v3
           imagePullPolicy: Always
 
           ports:
